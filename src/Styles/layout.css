@@ -1,0 +1,93 @@
+.App .sidebar {
+  width: 16%;
+  height: 100vh;
+  background-color: #191D2B;
+  position: fixed;
+  z-index: 11;
+  border-right: 1px solid #2e344e;
+  transform-origin: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .App .sidebar {
+    transform: translatex(-100%);
+    transition: all .4s ease-in-out;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 41px) {
+  .App .sidebar {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App .nav-toggle {
+    transition: all .4s ease-in-out;
+    transform: translateX(0);
+  }
+}
+
+.App .main-content {
+  width: 84%;
+  margin-left: 16%;
+  background-color: #10121B;
+  min-height: 100vh;
+  background-image: url(../img/dots.svg);
+  display: grid;
+  position: relative;
+}
+
+.App .main-content .content {
+  margin: 5rem 6rem;
+}
+
+@media screen and (max-width: 700px) {
+  .App .main-content {
+    margin: 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.nav-button {
+  position: absolute;
+  z-index: 10;
+  right: 10%;
+  top: 1%;
+  height: 5rem;
+  width: 5rem;
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav-button .lines-1, .nav-button .lines-2, .nav-button .lines-3 {
+  height: .4rem;
+  width: 100%;
+  background-color: #3858cc;
+  pointer-events: none;
+  display: none;
+}
+
+.nav-button .lines-1:not(:last-child), .nav-button .lines-2:not(:last-child), .nav-button .lines-3:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-button {
+    display: block;
+  }
+}
+
+.nav-button .lines-1, .nav-button .lines-2, .nav-button .lines-3 {
+  display: block;
+}

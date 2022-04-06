@@ -1,0 +1,39 @@
+@import './Styles/layout';
+@import './Styles/NavBar.scss';
+@import './Styles/typography';
+@import './Styles/title.scss';
+@import './Styles/about.scss';
+@import './Styles/skills.scss';
+@import './Styles/services.scss';
+@import './Styles/blogs.scss';
+@import './Styles/contact.scss';
+@import './Styles/portfolio.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color:rgba(29, 93, 230, 0.966);
+    border-radius: 50px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #a4acc4;
+}
+body{
+    color: #a4acc4;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1rem;
+}
+span{
+    color: #037FFF;
+}
+@media screen and (max-width :1000px){
+    html{
+        font-size: 70%;
+    }
+}
